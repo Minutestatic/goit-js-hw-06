@@ -4,9 +4,9 @@ console.log(typeof validationInput.getAttribute("data-length"));
 const dataLength = Number(validationInput.getAttribute("data-length"));
 console.log(dataLength);
 
-validationInput.addEventListener("blur", handleValidationBlur);
+validationInput.addEventListener("blur", handleValidationInputBlur);
 
-function handleValidationBlur() {
+function handleValidationInputBlur() {
   if (validationInput.value === "") {
     validationInput.classList.remove("valid");
     validationInput.classList.remove("invalid");
