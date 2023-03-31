@@ -8,6 +8,7 @@ function getRandomHexColor() {
 }
 
 button.addEventListener("click", onButtonClick);
+
 function onButtonClick() {
   const color = getRandomHexColor();
   document.body.style.backgroundColor = color;
